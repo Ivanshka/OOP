@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace OAiP
+namespace Laba_3
 {
     partial class Circle
     {
@@ -11,8 +11,7 @@ namespace OAiP
         /// </summary>
         static Circle()
         {
-            Random random = new Random();
-            Multiplier = random.Next();
+            Multiplier = 3;
         }
 
         /// <summary>

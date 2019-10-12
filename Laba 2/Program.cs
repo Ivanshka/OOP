@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace laba1
+namespace Laba_2
 {
     class Program
     {
@@ -250,6 +250,11 @@ namespace laba1
                 return (mas.Max(), mas.Min(), mas.Sum(), str[0]);
             }
             Console.WriteLine("Результат работы локальной функции\n" + localFunc(new int[]{ 1, 2, 3, 4 }, "string").ToString());
+
+            string aaa = "asdasd";
+            string bbb = "dsfdghet";
+            Console.WriteLine(aaa.CompareTo(bbb));
+
             Console.ReadLine();
         }
     }

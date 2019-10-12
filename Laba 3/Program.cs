@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace OAiP
+namespace Laba_3
 {
     // вариант 7
     partial class Circle
@@ -29,31 +29,11 @@ namespace OAiP
         /// </summary>
         public static string Name { get; } = "Окружность";
     }
-
-    /// <summary>
-    /// Тестовый класс
-    /// </summary>
-    class Test
-    {
-        // не пашет
-        //public int B { get { return B; } set { B = value; } }
-
-        // пашет
-        private int a;
-        public int A { get { return A; } set { a = value; } }
-
-        public Test(int a)
-        {
-            A = a;
-        }
-    }
-
+    
     class Program
     {
         static void Main()
         {
-            //Test test = new Test(5);
-
             Console.Title = "Лаба 3";
 
             Circle c1 = new Circle();
@@ -62,7 +42,6 @@ namespace OAiP
 
             Console.WriteLine($"Координаты объекта c1: ({c1.X}, {c1.Y})");
             Console.WriteLine($"Координаты объекта c2: ({c2.X}, {c2.Y})");
-            Console.WriteLine($"Координаты объекта c1: ({c1.X}, {c1.Y})");
             Console.WriteLine($"Равенство c1 и c2: {c1.Equals(c2)}");
             Console.WriteLine($"Информация о классе: {Circle.ClassInfo()}");
             Console.WriteLine($"Тип объекта c3: {c3.GetType()}");
@@ -73,7 +52,7 @@ namespace OAiP
             var anon = new {X = 3, Y = 5, Radius = 3.14f};
             Console.WriteLine($"Объект anon. Информация: X = {anon.X}, Y = {anon.Y}, радиус = {anon.Radius}\n");
 
-            Console.WriteLine("Работа с массивом объектов\n");
+            Console.WriteLine("Работа с массивом объектов");
 
             Circle[] circles = new Circle[5];
             circles[0] = new Circle();
@@ -137,3 +116,10 @@ namespace OAiP
         }
     }
 }
+
+/* ToString()
+ * GetHashCode()
+ * GetType()
+ * Equals()
+ * Finalize() (c)
+*/

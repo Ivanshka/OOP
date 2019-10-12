@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.757
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Laba 3", "OAiP\Laba 3.csproj", "{B3031B78-AB4A-4766-968A-40D167FA8608}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Laba 3", "Laba 3\Laba 3.csproj", "{B3031B78-AB4A-4766-968A-40D167FA8608}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Laba 4", "Laba 4\Laba 4.csproj", "{7DDC5390-9FE2-4BEE-910D-758EDB07E9AE}"
 EndProject
