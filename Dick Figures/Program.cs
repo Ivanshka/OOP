@@ -9,7 +9,6 @@ namespace Dick_Figures
         {
             Console.Title = "Dick Figures";
             while (true)
-            //for (int i = 0; i < 100; i++)
             {
                 Console.WriteLine("  ");
                 Console.WriteLine("LOL   ROFL:ROFL:LOL:         ");
@@ -18,7 +17,7 @@ namespace Dick_Figures
                 Console.WriteLine("            \\____O==____)");
                 Console.WriteLine("            ____I_I___/");
                 Thread.Sleep(50);
-                Console.SetCursorPosition(0, 0); //.Clear();
+                Console.SetCursorPosition(0, 0);
                 Console.WriteLine(" L");
                 Console.WriteLine(" O             :LOL:ROFL:ROFL");
                 Console.WriteLine(" L\\         _____I_____");
@@ -26,7 +25,7 @@ namespace Dick_Figures
                 Console.WriteLine("            \\____O==____)");
                 Console.WriteLine("            ____I_I___/");
                 Thread.Sleep(50);
-                Console.SetCursorPosition(0, 0); //.Clear();
+                Console.SetCursorPosition(0, 0);
             }
         }
     }
