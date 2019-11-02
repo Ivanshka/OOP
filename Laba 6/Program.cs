@@ -9,16 +9,14 @@ namespace Laba_6
 {
     interface ICheck
     {
-        string Name { get; set; }
-        string Time { get; set; }
-        void Test();
+        void Method();
     }
 
-    abstract partial class Ispitanie : Printer, ICheck
+    abstract partial class Ispitanie : Printer
     {
         // свойства
-        public string Name { get; set; }
-        public string Time { get; set; }
+        public abstract string Name { get; set; }
+        public abstract string Time { get; set; }
     }
 
     // структура

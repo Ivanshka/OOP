@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Laba_6
+namespace Laba_7
 {
     class Test : Ispitanie
     {
@@ -32,12 +32,6 @@ namespace Laba_6
             Time = time;
         }
 
-        public override string Name { get; set; }
-        public override string Time { get; set; }
-        
-        /// <summary>
-        /// Метод, который реализуется отдельно для интерфейса и для абстрактного класса
-        /// </summary>
         public override void Method()
         {
             Console.WriteLine("Реализация для класса " + typeof(Test));

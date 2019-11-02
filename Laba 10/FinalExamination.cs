@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Laba_5
+namespace Laba_10
 {
     class FinalExamination : Ispitanie
     {

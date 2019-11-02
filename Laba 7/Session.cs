@@ -4,10 +4,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Laba_6
+namespace Laba_7
 {
     /// <summary>
-    /// Класс-контейнер Сессия
+    /// Класс-контейнер
     /// </summary>
     class Session
     {

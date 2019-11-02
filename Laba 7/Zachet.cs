@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Laba_6
+namespace Laba_7
 {
     class Zachet : Ispitanie
     {
@@ -22,17 +22,12 @@ namespace Laba_6
             three = new Question(q3, a3);
             four = new Question(q4, a4);
         }
-        public override string Name { get; set; }
-        public override string Time { get; set; }
 
-        /// <summary>
-        /// Метод, который реализуется отдельно для интерфейса и для абстрактного класса
-        /// </summary>
         public override void Method()
         {
-            Console.WriteLine("Реализация для класса " + typeof(Question));
+            Console.WriteLine("Реализация для класса " + typeof(Zachet));
         }
-
+        
         public override string ToString() { return $"Зачет: {Name}, время: {Time}, вопросы:\n{one.ToString()}\n{two.ToString()}\n{three.ToString()}\n{four.ToString()}\n"; }
     }
 }

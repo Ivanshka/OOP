@@ -30,6 +30,18 @@ namespace Laba_5
             Name = name;
             Time = time;
         }
+
+        public override string Name { get; set; }
+        public override string Time { get; set; }
+
+        /// <summary>
+        /// Метод, который реализуется отдельно для интерфейса и для абстрактного класса
+        /// </summary>
+        public override void Method()
+        {
+            Console.WriteLine("Реализация для класса " + typeof(Question));
+        }
+
         public override string ToString()
         {
             StringBuilder str = new StringBuilder($"Тест: {Name}, время: {Time}, вопросы:\n");

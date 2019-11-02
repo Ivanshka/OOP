@@ -21,11 +21,12 @@ namespace Laba_5
 
                           Схема наследования:
                           
-                                  ICheck
-                                    |
                          _______Испытание______
                         /           |          \
-                      Тест       Экзамен    Вып.экз.
+                      Тест   ICheck |       Вып.экз.
+                                   \|        
+                                    |
+                                 Экзамен
 
                            Схема композиции:
 
@@ -40,9 +41,7 @@ namespace Laba_5
     /// </summary>
     interface ICheck
     {
-        string Name { get; set; }
-        string Time { get; set; }
-        void Test();
+        void Method();
     }
 
     class Program
@@ -51,14 +50,14 @@ namespace Laba_5
         {
             Console.WriteLine("Вызываем метод Test() с разной реализацией для класса и интерфейса...");
             Examination ex1 = new Examination("Физика", "8:00", "Что такое дилектрик?", "Это изолятор, пропускающий ток", "Что делает электродвигатель на 5 В при подключении 55 В??", "Сгорает к чертям");
-            ex1.Test();
-            (ex1 as ICheck).Test(); // или же ((ICheck)examination).Test();
+            ex1.Method();
+            (ex1 as ICheck).Method(); // или же ((ICheck)examination).Test();
 
             Console.WriteLine("Создаем объекты различных классов и выводим инфу через ссылки на абстрактный класс / интерфейс.");
             Examination ex2 = new Examination("ОАиП", "8:00", "Самый страшный Звэр на свете?", "Бедодел.", "Кто такой Бедодел?", "Рейд-босс первашей.");
             FinalExamination fex1 = new FinalExamination("ОС", "8:30", "Что такое ОС?", "Набор прог", "Что такое ОЗУ?", "Оперативное запоминающее устройство", "Что такое ЦП?", "Центральный процессор", "Зачем он нужен?", "Он - \"мозг\" компа");
-            Console.WriteLine("Первый экзамен: " + (ex2 as ICheck).Name);
-            Console.WriteLine("Время второго: " + (fex1 as Ispitanie).Time);
+            Console.WriteLine("Первый экзамен: " + ex2.Name);
+            Console.WriteLine("Время второго: " + fex1.Time);
             
             Console.WriteLine($"\n Вызываем ToString() для объектов массива...");
             // сделаем один тест, а то попусту класс создан

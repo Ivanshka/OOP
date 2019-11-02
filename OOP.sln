@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.757
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29409.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Laba 3", "Laba 3\Laba 3.csproj", "{B3031B78-AB4A-4766-968A-40D167FA8608}"
 EndProject
@@ -20,6 +20,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Laba 9", "Laba 9\Laba 9.csproj", "{7DB95E4C-6D38-48DE-8C36-2585EB40EFF1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Laba 2", "Laba 2\Laba 2.csproj", "{3EFBA078-D558-4E0C-9C6C-EC7CD6B4BB34}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Laba 10", "Laba 10\Laba 10.csproj", "{359ABFEB-F1FA-4CF3-9142-E4F8ED70F4F7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -101,6 +103,14 @@ Global
 		{3EFBA078-D558-4E0C-9C6C-EC7CD6B4BB34}.Release|Any CPU.Build.0 = Release|Any CPU
 		{3EFBA078-D558-4E0C-9C6C-EC7CD6B4BB34}.Release|x86.ActiveCfg = Release|Any CPU
 		{3EFBA078-D558-4E0C-9C6C-EC7CD6B4BB34}.Release|x86.Build.0 = Release|Any CPU
+		{359ABFEB-F1FA-4CF3-9142-E4F8ED70F4F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{359ABFEB-F1FA-4CF3-9142-E4F8ED70F4F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{359ABFEB-F1FA-4CF3-9142-E4F8ED70F4F7}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{359ABFEB-F1FA-4CF3-9142-E4F8ED70F4F7}.Debug|x86.Build.0 = Debug|Any CPU
+		{359ABFEB-F1FA-4CF3-9142-E4F8ED70F4F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{359ABFEB-F1FA-4CF3-9142-E4F8ED70F4F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{359ABFEB-F1FA-4CF3-9142-E4F8ED70F4F7}.Release|x86.ActiveCfg = Release|Any CPU
+		{359ABFEB-F1FA-4CF3-9142-E4F8ED70F4F7}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
