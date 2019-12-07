@@ -6,6 +6,11 @@ using System.Text;
 
 namespace Laba_6
 {
+    /* Ссылки
+     * http://www.energyed.ru/Inform/CSharpCh19
+    
+    */
+
     /// <summary>
     /// Класс-контейнер Сессия
     /// </summary>
@@ -17,10 +22,9 @@ namespace Laba_6
         /// </summary>
         public int Count;
 
-        // вместо методов get и set, требуемых в лабе проще и разумнее сделать индексатор
         public Ispitanie this[int index] { get { return list[index]; } set { list[index] = value; } }
 
-        // итератор для фозможности использования foreach
+        // итератор для возможности использования foreach
         public IEnumerator GetEnumerator()
         {
             for (int i = 0; i < list.Count; i++)

@@ -52,7 +52,7 @@ namespace Laba_7
 
         static void Func3()
         {
-            Debug.Assert(1 == 2, "Проверка .NET'овского Debug'а из System.Diagnostics.Debug:\n");
+            Debug.Assert(1 == 2, "System.Diagnostics.Debug:\n");
         }
 
         static void Main()
@@ -64,7 +64,7 @@ namespace Laba_7
             string[] answers = new string[] { "Единица измерения расстояния, равная расстоянию до объекта. :D ", "В центре галактики", "Юпитер, Сатурн, Уран, Нептун", "Кассиопея", "Капелла" };
             try
             {
-                Test test = new Test("Астрономия", "10:0ыва5", questions, answers);
+                Test test = new Test("Астрономия", "10а:05", questions, answers);
             }
             catch (InvalidTimeValueException e)
             {
@@ -118,16 +118,16 @@ namespace Laba_7
             {
                 Console.WriteLine("finally 4");
             }
-
+            
             Console.WriteLine("\nИсключение 5:");
             try
             {
                 int zero = 0;
                 int test = 100 / zero;
             }
-            catch (DivideByZeroException e)
+            catch
             {
-                Console.WriteLine("DivideByZeroException:\n" + e.ToString());
+                Console.WriteLine("DivideByZeroException:\n");
             }
             finally
             {

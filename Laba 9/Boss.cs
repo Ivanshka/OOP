@@ -11,13 +11,13 @@ namespace Laba_9
     class Boss
     {
         public delegate void TurnOnDelegate(int voltage);
-        public delegate void UpgradeDelegate();
+        public delegate void UpgradeDelegate(int newVoltage);
 
-        public bool IsLiving { get; set; }
+        public bool IsAlive { get; set; }
 
         // события
         /// <summary>
-        /// Событие срабатывает при улучшении робота
+        /// Событие срабатывает при ремонте и улучшении робота
         /// </summary>
         public event UpgradeDelegate Upgrade;
         /// <summary>
@@ -37,12 +37,17 @@ namespace Laba_9
         public Boss(int workingVoltage)
         {
             WorkingVoltage = workingVoltage;
-            IsLiving = true;
+            IsAlive = true;
         }
 
         public void Start(int voltage)
         {
             TurnOn?.Invoke(voltage);
         }
+
+        /// <summary>
+        /// Восстановить робота
+        /// </summary>
+        public void Repair(int newVoltage) { IsAlive = true; WorkingVoltage = newVoltage; Upgrade?.Invoke(newVoltage); }
     }
 }

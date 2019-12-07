@@ -14,11 +14,11 @@ namespace Laba_7
         /// <summary>
         /// Конструктор, созданный для демонстрации вызова исключения.
         /// </summary>
-        /// <param name="HaveBeInteger"></param>
-        public ExceptionDemonstration(object HaveBeInteger)
+        /// <param name="MustBeInteger"></param>
+        public ExceptionDemonstration(object MustBeInteger)
         {
-            if (HaveBeInteger is int)
-                Number = (int)HaveBeInteger;
+            if (MustBeInteger is int)
+                Number = (int)MustBeInteger;
             else throw new ObjectIsNotIntegerException("Объект не является числом!");
         }
     }

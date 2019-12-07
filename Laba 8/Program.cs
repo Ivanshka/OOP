@@ -8,6 +8,8 @@ using Laba_5; // подключаем 5-ю лабу
 
 namespace Laba_8
 {
+    
+
     /// <summary>
     /// Интерфейс для работы с обобщеными типами
     /// </summary>
@@ -31,7 +33,6 @@ namespace Laba_8
     /// <summary>
     /// Класс лабного исключения
     /// </summary>
-    [Serializable]
     public class LabaException : Exception
     {
         public LabaException() { }

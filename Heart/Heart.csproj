@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{5CC4FF55-9609-4508-B932-D78CB7A3F568}</ProjectGuid>
+    <ProjectGuid>{FCF58A63-F5D8-4675-980C-6CC9C2AC3C58}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Laba_8</RootNamespace>
-    <AssemblyName>Laba 8</AssemblyName>
+    <RootNamespace>Heart</RootNamespace>
+    <AssemblyName>Heart</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -41,14 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Examination.cs" />
-    <Compile Include="FinalExamination.cs" />
-    <Compile Include="Ispitanie.cs" />
-    <Compile Include="Printer.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Question.cs" />
-    <Compile Include="Test.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

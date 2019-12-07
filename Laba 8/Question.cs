@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Laba_10
+namespace Laba_5
 {
     /// <summary>
     /// Класс вопроса
     /// </summary>
-    sealed class Question: IComparable
+    sealed class Question // ГОТОВ
     {
         // свойства
         public string Answer { get; }
@@ -17,11 +17,5 @@ namespace Laba_10
         // конструкторы и методы
         public Question(string question, string answer) { Text = question; Answer = answer; }
         public override string ToString() { return $"Вопрос: {Text} ({Answer})"; }
-
-        public int CompareTo(object obj)
-        {
-            Question temp = obj as Question;
-            return Text.CompareTo(temp.Text);
-        }
     }
 }

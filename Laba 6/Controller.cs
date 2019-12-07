@@ -40,6 +40,9 @@ namespace Laba_6
             return Count;
         }
 
+        /// <summary>
+        /// Поиск экзамена по имени
+        /// </summary>
         public static string SearchExaminationsByName(this Session session, string name)
         {
             byte str = 1;
