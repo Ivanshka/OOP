@@ -37,7 +37,7 @@ namespace Laba_13
             Console.WriteLine();
             PISFileInfo.GetFileInfo("pislogfile.txt");
             Console.WriteLine();
-            PISFileInfo.GetCreateTime("pislogfile.txt");
+            PISFileInfo.GetCreatingTime("pislogfile.txt");
             Console.WriteLine();
 
             PISDirInfo.GetCountOfFiles("D:\\Файлы пользователя\\Рабочий стол\\ООП\\OOP\\Dick Figures");

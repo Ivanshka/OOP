@@ -43,7 +43,7 @@ namespace Laba_13
             }
         }
 
-        public static void GetCreateTime(string fileName)
+        public static void GetCreatingTime(string fileName)
         {
             PISLog.Log("Получение даты создания файла...", fileName);
             Console.WriteLine($"Получение даты создания файла... | {fileName}");
