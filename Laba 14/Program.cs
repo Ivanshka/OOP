@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using System.Linq;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.Runtime.Serialization.Formatters.Soap;
 using System.Runtime.Serialization.Json;
@@ -111,7 +112,7 @@ namespace Laba_14
         {
             Console.WriteLine("Задание 1");
             Console.Write("Сериализация...");
-            
+
             Examination exam = new Examination("Вышмат", "8:00", "Как зовут препода?", "Асмыкович Иван Кузьмич", "На сдачу какого предмета ты пришел?", "Высшая математика");
             BinSer(ref exam);
             SoapSer(ref exam);
@@ -152,7 +153,7 @@ namespace Laba_14
             Console.WriteLine("\nЗапрос 1");
             XmlDocument xDoc = new XmlDocument();
             xDoc.Load("xpath.xml");
-            
+
             XmlNodeList answers = xDoc.SelectNodes("//Examination");
             foreach (XmlNode a in answers)
             {
@@ -166,6 +167,15 @@ namespace Laba_14
             }
 
             Console.WriteLine("\n\nЗадание 4: LINQ to XML");
+            XDocument xdoc = XDocument.Load("xpath.xml");
+
+            var items = from xe in xdoc.Element("ArrayOfExamination").Elements("Examination") select xe.Value;
+
+            foreach (var item in items)
+                Console.WriteLine(item);
+
+
+            Console.WriteLine("\nxPath");
 
             DataContractJsonSerializer js = new DataContractJsonSerializer(typeof(Examination));
 
@@ -176,7 +186,6 @@ namespace Laba_14
                 File.WriteAllText("out.json", "");
             }
 
-            XDocument xdoc = XDocument.Load("xpath.xml");
             foreach (XElement ex in xdoc.Element("ArrayOfExamination").Elements("Examination"))
             {
                 XElement one = ex.Element("one");
@@ -194,6 +203,13 @@ namespace Laba_14
                 js.WriteObject(fs, obj);
                 fs.Close();
             }
+
+            Console.WriteLine("Сериализуем объект класса с коллекцией...");
+            ClassWithArray cwa = new ClassWithArray();
+            js = new DataContractJsonSerializer(typeof(ClassWithArray));
+            FileStream fs2 = new FileStream("cwa.json", FileMode.Create);
+            js.WriteObject(fs2, cwa);
+            fs2.Close();
 
             Console.WriteLine("DONE.");
             Console.ReadLine();
