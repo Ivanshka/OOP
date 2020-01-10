@@ -1,14 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Runtime.Serialization.Formatters.Binary;
-using System.Text;
 using Laba_5; // подключаем 5-ю лабу
 
 namespace Laba_8
 {
-    
+
 
     /// <summary>
     /// Интерфейс для работы с обобщеными типами

@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace Laba_9
+﻿namespace Laba_9
 {
     /// <summary>
     /// Класс робота-босса

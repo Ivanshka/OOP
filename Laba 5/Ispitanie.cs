@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace Laba_5
+﻿namespace Laba_5
 {
     /// <summary>
     /// Абстрактный класс испытания

@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Laba_6
+﻿namespace Laba_6
 {
     abstract partial class Ispitanie : Printer
     {

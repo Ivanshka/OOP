@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace Laba_4
+﻿namespace Laba_4
 {
     /// <summary>
     /// Статический класс, реализующий математические операции с множествами

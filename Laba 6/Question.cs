@@ -1,11 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace Laba_6
+﻿namespace Laba_6
 {
-
     sealed class Question // ГОТОВ
     {
         // свойства
